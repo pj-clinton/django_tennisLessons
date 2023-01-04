@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-)k_r!*i7f#3n&!wxzlo=@e3jo1o$4zlon=y#t)jn1x3@-&p@*^'
+SECRET_KEY = 'django-insecure-5bblk0%6)ip6=1w0mb0va^b2r5+ea$dsce2(osth*k+lf2i5^f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -41,7 +41,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'myProject.urls'
+ROOT_URLCONF = 'tennisLessons.urls'
 
 TEMPLATES = [
     {
@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myProject.wsgi.application'
+WSGI_APPLICATION = 'tennisLessons.wsgi.application'
 
 
 # Database
