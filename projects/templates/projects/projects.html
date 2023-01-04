@@ -1,11 +1,32 @@
 {% extends 'main.html' %}
 
+
 {% block content %}
 
 <h1>Project</h1>
 
-<p>
-  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-</p>
+<h1>Name: {{name}}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {% for project in projects %}
+    <tr>
+      <td>{{project.id}}</td>
+      <td>{{project.title}} {% if project.topRated %} <strong>TOP RATED</strong> {% endif %} </td>
+      <td>{{project.description}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
 
 {% endblock content %}
